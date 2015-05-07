@@ -26,4 +26,11 @@ describe ('median', function() {
 	})
 });
 
+describe ('mode', function() {
+
+	it('takes an array of test scores and calculates the median score', function() {
+		expect(grader.medianScore([99,98,97,96,95])).toEqual(97);
+		expect(grader.medianScore([10,20,30,40])).toEqual(25);
+	})
+});
 
